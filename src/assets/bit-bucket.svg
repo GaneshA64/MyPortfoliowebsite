@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100.676" height="90.529" viewBox="0 0 100.676 90.529">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.086" y1="0.138" x2="0.469" y2="0.788" gradientUnits="objectBoundingBox">
+      <stop offset="0.18" stop-color="#0052cc"/>
+      <stop offset="1" stop-color="#2684ff"/>
+    </linearGradient>
+  </defs>
+  <g id="bit-bucket" transform="translate(0.026 -6.26)">
+    <g id="Blue" transform="translate(-0.026 6.26)">
+      <path id="Path_87317" data-name="Path 87317" d="M26.827,54.78H47.874l5.08-29.66H21.23Z" transform="translate(13.052 5.298)" fill="none"/>
+      <path id="Path_87318" data-name="Path 87318" d="M3.241,6.26A3.226,3.226,0,0,0,.016,10L13.709,93.128A4.387,4.387,0,0,0,18,96.789H83.69a3.226,3.226,0,0,0,3.226-2.71l13.693-84.061a3.226,3.226,0,0,0-3.226-3.742ZM60.9,66.338H39.934l-5.677-29.66H65.981Z" transform="translate(0.026 -6.26)" fill="#2684ff"/>
+      <path id="Path_87319" data-name="Path 87319" d="M90.477,25.12H60.2l-5.08,29.66H34.157L9.4,84.166a4.371,4.371,0,0,0,2.822,1.064H77.93a3.226,3.226,0,0,0,3.226-2.71Z" transform="translate(5.802 5.298)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
