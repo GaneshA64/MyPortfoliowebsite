@@ -1,33 +1,47 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import ExperienceList from '../../All_Lists/ExperienceList'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ExperienceList from '../../All_Lists/ExperienceList';
 
 function Experience() {
-  
-  //for animation of the content in a component
+  // Initialize AOS for animation
   useEffect(() => {
-    AOS.init({ duration: 1000 })
-  }, [1000])
-  
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div id='Experience' className='bg-white text-black dark:bg-slate-900 dark:text-white p-20 flex flex-col items-center justify-center'>
-      <h1 data-aos='fade-right' className='text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500'>EXPERIENCE</h1>
-      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10'>
-
-      
-      {ExperienceList.slice().reverse().map((Experience) => (
-        <div key={Experience.id} data-aos={Experience.id % 2 === 0 ? 'fade-down' : 'fade-up'} className='flex flex-col'>
-            <img className='text-[26px] flex items-center justify-center rounded-3xl h-40 w-60 p-1 border-2 border-fuchsia-800 border-glow' src={Experience.image} alt="Experience" />
-          <p className='flex gap-2 h-full lg:mt-4 justify-center mt-4  '>
-            {Experience.title}
-          </p>
-        </div>
-      ))}
-
+    <div
+      id='Experience'
+      className='bg-white text-black dark:bg-slate-900 dark:text-white p-20 flex flex-col items-center justify-center'
+    >
+      <h1
+        data-aos='fade-right'
+        className='text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500'
+      >
+        EXPERIENCE
+      </h1>
+      <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-around gap-10'>
+        {ExperienceList.slice(0, 2).map((Experience) => (
+          <div
+            key={Experience.id}
+            data-aos={Experience.id % 2 === 0 ? 'fade-down' : 'fade-up'}
+            className='flex flex-col items-center'
+          >
+            <a target="_blank" href={Experience.link}>
+            <img
+              className='text-[26px] rounded-3xl h-40 w-60 p-1 border-2 border-fuchsia-800 border-glow mx-auto'
+              src={Experience.image}
+              alt='Experience'
+            />
+            </a>
+            <p className='flex gap-2 h-full lg:mt-4 justify-center mt-4'>
+              {Experience.title}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Experience
+export default Experience;
